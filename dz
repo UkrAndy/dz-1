@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0.
+        // let a = [3, 7, -54, -97, 53]
+        // a.forEach((x, i, arr) => {
+        //     if (x < 0) arr[i] = 0
+        // })
+        // document.write(a)
+        //...............................................
+
+        //Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.
+        // function isEven(number, i, arr) {
+        //     return number < 300
+        // }
+        // var a = [50, 179, 1700, 2400, 3100]
+        // var a_even = a.filter(isEven)
+        // var a_even = a.filter(x => x < 300)
+        // document.write(a_even)
+        // //
+
+        // Задача 3. Дано масив цін товарів.Для цін, які менші за 1000грн.додати 20 % ціни, для тих, які більші за 1000 грн.відняти 30 %.
+        // var array = [50, 179, 1700, 2400, 3100]
+        // function percent(prc) {
+        //     for (let i = 0; i < prc.length; i++) {
+        //         if (prc[i] < 1000) {
+        //             prc[i] += (prc[i] / 100) * 20
+        //         }
+        //         else if (prc[i] > 1000) {
+        //             prc[i] -= (prc[i] / 100) * 30
+
+        //         }
+        //     }
+        //     return prc
+        // }
+
+        // console.log(percent(array))
+
+        // Задача 4. Дано масив імен. Сформувати новий масив, який складається з імен, які починаються на задану літеру.
+        // let numbers = ["Ivan", "Petro", "Mikki", "Vlad", "Kate", "Vital"]
+        // const newArr = numbers.filter(x => x[0] == 'V')
+        // document.write(newArr)
+
+        // Задача 5. Дано ваги автомобілів на парковці.З’ясувати, чи усі автомобілі є легковими(легшими за 2000 кг).
+        // var a = [2001, 752, 3750, 1300, 5000]
+        // let b = a.filter(x => x < 2000)
+        // alert(b)
+
+        //Задача 6. Дано масив, який зберігає кількість відвідувачів протягом тижня.З’ясувати, чи були дні, коли кількість відвідувачів була меншою за 10.
+        // var a = [15, 37, 87, 7, 18, 4, 0]
+        // let b = a.filter(x => x < 10).length
+        // document.write("Булo" + b + "дні коли кількість відвідувачів була меншою за 10"
+        // )
+        // Задача 7. Розробити функцію, яка би для довільної кількості переданих символів визначала, кількість букв «а».
+
+        // Задача 8. Розробити функцію, яка би для довільної кількості чисел знаходила добуток чисел.
+        // function f(result, x, i, arr) {
+        //     if (x > 0) {
+        //         result *= x
+        //     }
+        //     return result
+        // }
+        // var a = [17, 2, 3, 4, 5]
+        // var c = a.reduce(f)
+        // document.write(c)
+
+        // Задача 9. Розробити функцію, яка би для довільної кількості чисел знаходила максимальне
+
+        // var arr = [1, 0, -1, -5, 2, -3, 4, 110, -18],
+        //     max
+        // function getMax(arr) {
+
+        //     maxl = arr[0]
+        //     for (var i = 0; i < arr.length; i++) {
+        //         if (maxl < arr[i]) {
+        //             maxl = arr[i]
+        //         }
+        //     }
+        //     return maxl
+        // }
+        // max = getMax(arr)
+        // document.write(max)
+
+        // Задача. Дано масив років народження працівників. Вивести масив тих, які є призовного віку (менше 25 років).
+        // var a = [18, 27, 35, 17, 45]
+        // var newArr = a.filter((x) => x <= 25)
+        // document.write(newArr)
+
+        //Задача. Дано масив цін товарів. Сформувати масив тих, які є меншими за 2000грн.
+        // var a = [1800, 2735, 3562, 1765, 4576]
+        // var newArr = a.filter((x) => x <= 2000)
+        // document.write(newArr)
+
+        //Задача. Дано масив цін товарів. Знайти сумарну вартість тих, які знаходяться в межах від 1000 до 2000.
+        // var a = [1800, 2735, 3562, 1765, 4576, 765]
+
+        // function Name(arr) {
+        //     for (let arr = 0; arr < array.length; arr++) {
+        //         if (a[-1]) {
+        //             return a
+        //         }
+
+        //     }
+        // }
+        // var a = ["Ivan", "Petro", "Olja"];
+        // document.write(a)
+
+        //Задача. Дано масив літер. Сформувати рядок, який складається тільки з голосних літер.
+        // var consLetter = ['a', 'o', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я']
+        // var letters = ['я', ' ', 'л', 'ю', 'б', 'л', 'ю', ' ', 'к', 'о', 'д', 'и', 'т', 'ь']
+        // var word = ""
+        // for (var i = 0; i < letters.length; i++) {
+        //     if (consLetter.indexOf(letters[i]) != -1) {
+        //         word += letters[i]
+        //     }
+        // }
+        // document.write(word)
+
+        // //Задача 1. Дано масив рядків.Вивести ті, у яких є цифри(використати метод test та регулярні вирази)
+        // let arr = ["Hello Word", "Hello Pretty22", "Digital", "My Love2", "What", "my name 123", "Kate 12"]
+        // let reg = /\d/
+        // let numbArray = arr.filter(x => reg.test(x))
+        // document.write(numbArray)
+
+        //Задача 2. Дано масив рядків. Вивести ті, у яких немає цифр.
+        // let arr = ["Hello Word", "Hello Pretty22", "Digital", "My Love2", "What", "my name 123", "Kate 12"]
+        // let reg = /\d/
+        // let numbArray = arr.filter(x => !reg.test(x))
+        // document.write(numbArray)
+
+        // Задача 5. Дано масив рядків. Вивести ті, у яких є або цифра 1 або цифра 3.
+        // let arr = ["Hello Word", "Hello Pretty22", "Digital", "My Love2", "What", "my name 123", "Kate 12"]
+        // let reg = /[13]/
+        // let numbArray = arr.filter(x => reg.test(x))
+        // document.write(numbArray)
+
+        // Задача 6. Дано рядок тексту, вивести усі числа, які є у тексті.
+        // let a = "Lorem ipsum eu1 vulputate sodales consequat2 ipsum netus, curabitur3 mauris arcu4 in 5dapibus mi"
+        // let reg = /\d+/g
+        // var result = a.match(reg)
+        // document.write(result)
+
+       // Задача 7. Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.
+        // let a = "Lorem ipsum eu1 vulputate sodales consequat2 ipsum netus, curabitur3 mauris arcu4 in 5dapibus mi"
+        // let reg = /\W+/g
+        // var result = a.match(reg)
+        // document.write(result)
+
+        //Задача 9. Дано рядок тексту. Перевірити, чи містить він дату у форматі dd.mm.yyyy (dd- день, mm- місяць, yyyy- рік).
+        // let a = "Lorem ipsum10.09.2019 eu11 vulputate sodales consequat2 ipsum netus, curabitur33 mauris arcu4 in 55dapibus mi"
+        // let reg = /\d{2}\.\d{2}\.\d{4}/
+        // var result = a.match(reg)
+        // document.write(result)
+
+       // Задача 10. Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.
+        // let a = "Lorem ipsum eu11 vulputate sodales consequat2 ipsum netus, curabitur33 mauris arcu4 in 55dapibus mi"
+        // let reg = /\d{2}/g
+        // var result = a.match(reg)
+        // document.write(result)
+
+
+    </script>
+</body>
+
+</html>
