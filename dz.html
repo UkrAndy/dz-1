@@ -19,11 +19,11 @@
         //...............................................
 
         //Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.
-        // function isEven(number, i, arr) {
+        // function isEven(number, i, arr) {   Називайте функції так, щоб за назвою було зрозуміло, що ця функція робить
         //     return number < 300
         // }
         // var a = [50, 179, 1700, 2400, 3100]
-        // var a_even = a.filter(isEven)
+        // var a_even = a.filter(isEven)         Також краще використовувати лямбда вирази
         // var a_even = a.filter(x => x < 300)
         // document.write(a_even)
         // //
@@ -35,7 +35,7 @@
         //         if (prc[i] < 1000) {
         //             prc[i] += (prc[i] / 100) * 20
         //         }
-        //         else if (prc[i] > 1000) {
+        //         else if (prc[i] > 1000) {      
         //             prc[i] -= (prc[i] / 100) * 30
 
         //         }
@@ -43,7 +43,7 @@
         //     return prc
         // }
 
-        // console.log(percent(array))
+        // console.log(percent(array))   Краще буо використати forEach
 
         // Задача 4. Дано масив імен. Сформувати новий масив, який складається з імен, які починаються на задану літеру.
         // let numbers = ["Ivan", "Petro", "Mikki", "Vlad", "Kate", "Vital"]
@@ -57,7 +57,7 @@
 
         //Задача 6. Дано масив, який зберігає кількість відвідувачів протягом тижня.З’ясувати, чи були дні, коли кількість відвідувачів була меншою за 10.
         // var a = [15, 37, 87, 7, 18, 4, 0]
-        // let b = a.filter(x => x < 10).length
+        // let b = a.filter(x => x < 10).length    Краще було використати some
         // document.write("Булo" + b + "дні коли кількість відвідувачів була меншою за 10"
         // )
         // Задача 7. Розробити функцію, яка би для довільної кількості переданих символів визначала, кількість букв «а».
@@ -70,7 +70,7 @@
         //     return result
         // }
         // var a = [17, 2, 3, 4, 5]
-        // var c = a.reduce(f)
+        // var c = a.reduce(f)    //Краще використовуйте лямбда вирази
         // document.write(c)
 
         // Задача 9. Розробити функцію, яка би для довільної кількості чисел знаходила максимальне
@@ -87,17 +87,17 @@
         //     }
         //     return maxl
         // }
-        // max = getMax(arr)
+        // max = getMax(arr)     Треба було використати reduce
         // document.write(max)
 
         // Задача. Дано масив років народження працівників. Вивести масив тих, які є призовного віку (менше 25 років).
         // var a = [18, 27, 35, 17, 45]
-        // var newArr = a.filter((x) => x <= 25)
+        // var newArr = a.filter((x) => x <= 25)   Якщо аргумент один, то не треба писати дужок var newArr = a.filter(x => x <= 25)
         // document.write(newArr)
 
         //Задача. Дано масив цін товарів. Сформувати масив тих, які є меншими за 2000грн.
         // var a = [1800, 2735, 3562, 1765, 4576]
-        // var newArr = a.filter((x) => x <= 2000)
+        // var newArr = a.filter((x) => x <= 2000)   Аналогічно
         // document.write(newArr)
 
         //Задача. Дано масив цін товарів. Знайти сумарну вартість тих, які знаходяться в межах від 1000 до 2000.
@@ -105,7 +105,7 @@
 
         // function Name(arr) {
         //     for (let arr = 0; arr < array.length; arr++) {
-        //         if (a[-1]) {
+        //         if (a[-1]) {    Не зрозумів???
         //             return a
         //         }
 
@@ -145,13 +145,13 @@
 
         // Задача 6. Дано рядок тексту, вивести усі числа, які є у тексті.
         // let a = "Lorem ipsum eu1 vulputate sodales consequat2 ipsum netus, curabitur3 mauris arcu4 in 5dapibus mi"
-        // let reg = /\d+/g
+        // let reg = /\d+/g      Не вистачає кінців слова \b
         // var result = a.match(reg)
         // document.write(result)
 
        // Задача 7. Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.
         // let a = "Lorem ipsum eu1 vulputate sodales consequat2 ipsum netus, curabitur3 mauris arcu4 in 5dapibus mi"
-        // let reg = /\W+/g
+        // let reg = /\W+/g    \\Тут ще подумайте
         // var result = a.match(reg)
         // document.write(result)
 
@@ -163,7 +163,7 @@
 
        // Задача 10. Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.
         // let a = "Lorem ipsum eu11 vulputate sodales consequat2 ipsum netus, curabitur33 mauris arcu4 in 55dapibus mi"
-        // let reg = /\d{2}/g
+        // let reg = /\d{2}/g      Не вистачає кіців слова
         // var result = a.match(reg)
         // document.write(result)
 
